@@ -1,3 +1,3 @@
-# DevHubBD Crowdsourcing repository
+# DevHubBD Issue repository
 
-This repository is created to collect information from the community to enrich the information hub of [DevHubBD website](https://www.devhubbd.com).
+Please create an issue in this repository for any bugs, edit requests, or feature ideas for the [DevHubBD website](https://www.devhubbd.com).
