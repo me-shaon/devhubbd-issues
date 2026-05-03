@@ -1,0 +1,60 @@
+name: Edit Request
+description: Request a correction or update to existing information.
+title: "[Edit]: "
+labels: ["edit-request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to request edits or corrections to existing data on the platform.
+  - type: input
+    id: entry_name
+    attributes:
+      label: Entry name
+      description: Name of the company, event, or item to be edited.
+    validations:
+      required: true
+  - type: dropdown
+    id: entry_type
+    attributes:
+      label: Entry type
+      options:
+        - Company
+        - Event
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: entry_url
+    attributes:
+      label: Entry URL
+      description: Link to the specific entry on the site (if available).
+    validations:
+      required: false
+  - type: textarea
+    id: current_info
+    attributes:
+      label: Current information
+      description: What is currently shown that needs to be changed?
+    validations:
+      required: true
+  - type: textarea
+    id: correct_info
+    attributes:
+      label: Correct information
+      description: What should it say instead? Provide accurate details.
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source / reference
+      description: Link or reference that verifies the correct information.
+    validations:
+      required: false
+  - type: textarea
+    id: additional_notes
+    attributes:
+      label: Additional notes
+    validations:
+      required: false

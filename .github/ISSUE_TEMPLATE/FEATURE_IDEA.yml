@@ -1,0 +1,54 @@
+name: Feature Idea
+description: Suggest a new feature or improvement.
+title: "[Feature]: "
+labels: ["feature-idea"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Got an idea to make the platform better? Share it here.
+  - type: input
+    id: title
+    attributes:
+      label: Feature title
+      description: Short name for the feature.
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or motivation
+      description: What problem does this feature solve? Why is it needed?
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+      description: Describe the feature you'd like to see.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Any other approaches you thought about?
+    validations:
+      required: false
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      options:
+        - Nice to have
+        - Important
+        - Critical
+    validations:
+      required: false
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: Additional context
+      description: Screenshots, mockups, or any other relevant info.
+    validations:
+      required: false
